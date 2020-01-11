@@ -7,22 +7,24 @@
     "build": "browserify --entry index.js --outfile bundle.js",
     "buildbabel": "browserify --entry index.js -o bundle.js -t [ babelify --presets [ @babel/preset-env] ]",
     "buildw": "watchify index.js -o bundle.js -v",
-    "buildwbabel": "watchify --entry index.js -o bundle.js -t [ babelify --presets [ @babel/preset-env] ] -v"
+    "buildwbabel": "watchify --entry index.js -o bundle.js -t [ babelify --presets [ @babel/preset-env] ] -v",
+    "watchify": "watchify --entry index.js -o bundle.js -t [ babelify --presets [ @babel/preset-env] ] -v"
   },
   "repository": {
     "type": "git",
     "url": "js-api-test"
   },
-  "author": "gdznela",
+  "author": "tamunaKh",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.18.0"
+    "axios": "^0.18.1",
+    "jquery": "^3.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
     "babelify": "^10.0.0",
     "browserify": "^16.2.3",
-    "watchify": "^3.11.0"
+    "watchify": "^3.11.1"
   }
 }
